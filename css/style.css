@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background: #E5E5E5;
   background-image: url("../images/bg.jpg");
   background-size: cover;
+  background-position: center;
 
 }
 
@@ -17,7 +19,9 @@ body {
   z-index: 10;
 }
 
-#card, #card-front, #card-inside {
+#card,
+#card-front,
+#card-inside {
   height: 580px;
 }
 
@@ -26,10 +30,11 @@ body {
   height: 100%;
 }
 
-#card-front, #card-inside {
+#card-front,
+#card-inside {
   width: 50%;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 50%;
 }
@@ -37,18 +42,18 @@ body {
 #card-inside .wrap {
   background: #FFEFEF;
   -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
 }
 
 #card {
   width: 960px;
   margin: auto;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-perspective: 5000px;
-          perspective: 5000px;
+  perspective: 5000px;
   -webkit-transform: translateX(-25%);
-          transform: translateX(-25%);
+  transform: translateX(-25%);
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -72,7 +77,7 @@ body {
 #card-inside {
   font-size: 1.3em;
   line-height: 1.4;
-font-family: 'Lobster';
+  font-family: 'Lobster';
   color: #331717;
   font-style: italic;
 }
@@ -99,16 +104,16 @@ p.signed {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5555), to(#FF7777));
   background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
   -webkit-transition: -webkit-transform 1s linear;
   transition: -webkit-transform 1s linear;
   transition: transform 1s linear;
   transition: transform 1s linear, -webkit-transform 1s linear;
   position: relative;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-perspective: 5000px;
-          perspective: 5000px;
+  perspective: 5000px;
 }
 
 #card-front:before {
@@ -120,14 +125,14 @@ p.signed {
   display: block;
   background-color: #444;
   -webkit-transform: translateZ(-1px);
-          transform: translateZ(-1px);
+  transform: translateZ(-1px);
 }
 
 #card-front .wrap {
   -webkit-transition: background 1s linear;
   transition: background 1s linear;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #card-front button {
@@ -144,7 +149,7 @@ p.signed {
   border: none;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.4);
 }
 
 #card-front button:hover,
@@ -158,7 +163,7 @@ p.signed {
 
 #card.open-fully {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 #card.open-fully #close,
@@ -173,7 +178,7 @@ p.signed {
 #card.open-half #card-front,
 #card.close-half #card-front {
   -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
 }
 
 #card.open-half .shadow {
@@ -187,7 +192,7 @@ p.signed {
 
 #card.open-fully #card-front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 #card.open-fully .shadow {
@@ -197,7 +202,7 @@ p.signed {
 footer {
   max-width: 500px;
   margin: 40px auto;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
   font-size: 14px;
   line-height: 1.6;
   color: #888;
@@ -229,11 +234,11 @@ font-family: 'Lobster', cursive;
   width: 5px;
   height: 35px;
   -webkit-transform: translateY(-300px);
-          transform: translateY(-300px);
+  transform: translateY(-300px);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-animation: in 500ms 5s ease-out forwards;
-          animation: in 500ms 5s ease-out forwards;
+  animation: in 500ms 5s ease-out forwards;
 }
 
 .velas:after,
@@ -269,75 +274,85 @@ font-family: 'Lobster', cursive;
 
 .fuego:nth-child(1) {
   -webkit-animation: fuego 2s 5.5s infinite;
-          animation: fuego 2s 5.5s infinite;
+  animation: fuego 2s 5.5s infinite;
 }
 
 .fuego:nth-child(2) {
   -webkit-animation: fuego 1.5s 5.5s infinite;
-          animation: fuego 1.5s 5.5s infinite;
+  animation: fuego 1.5s 5.5s infinite;
 }
 
 .fuego:nth-child(3) {
   -webkit-animation: fuego 1s 5.5s infinite;
-          animation: fuego 1s 5.5s infinite;
+  animation: fuego 1s 5.5s infinite;
 }
 
 .fuego:nth-child(4) {
   -webkit-animation: fuego 0.5s 5.5s infinite;
-          animation: fuego 0.5s 5.5s infinite;
+  animation: fuego 0.5s 5.5s infinite;
 }
 
 .fuego:nth-child(5) {
   -webkit-animation: fuego 0.2s 5.5s infinite;
-          animation: fuego 0.2s 5.5s infinite;
+  animation: fuego 0.2s 5.5s infinite;
 }
 
 /* ============================================== Animation Fire
 */
 @-webkit-keyframes fuego {
-  0%, 100% {
+
+  0%,
+  100% {
     background: rgba(254, 248, 97, 0.5);
     -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-            box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
     -webkit-transform: translateY(0) scale(1);
-            transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
   }
+
   50% {
     background: rgba(255, 50, 0, 0.1);
     -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
-            box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
     -webkit-transform: translateY(-20px) scale(0);
-            transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
   }
 }
+
 @keyframes fuego {
-  0%, 100% {
+
+  0%,
+  100% {
     background: rgba(254, 248, 97, 0.5);
     -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-            box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
     -webkit-transform: translateY(0) scale(1);
-            transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
   }
+
   50% {
     background: rgba(255, 50, 0, 0.1);
     -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
-            box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
     -webkit-transform: translateY(-20px) scale(0);
-            transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
   }
 }
+
 @-webkit-keyframes in {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
+
 @keyframes in {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
+
 .text {
   color: #8b6a60;
   font-family: 'Lobster', cursive;
@@ -345,6 +360,7 @@ font-family: 'Lobster', cursive;
   font-style: italic;
   text-align: center;
 }
+
 .text h1 {
   font-size: 1.4em;
 }
@@ -359,9 +375,9 @@ font-family: 'Lobster', cursive;
   width: 80%;
   margin: auto;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(-1px) rotateY(180deg);
-          transform: translateZ(-1px) rotateY(180deg);
+  transform: translateZ(-1px) rotateY(180deg);
   background-color: #ffefef;
 }
 
@@ -372,9 +388,9 @@ font-family: 'Lobster', cursive;
   left: 0;
   right: 0;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(-2px) rotateY(180deg);
-          transform: translateZ(-2px) rotateY(180deg);
+  transform: translateZ(-2px) rotateY(180deg);
   pointer-events: none;
   -webkit-transition: background 1s linear;
   transition: background 1s linear;
@@ -389,32 +405,33 @@ font-family: 'Lobster', cursive;
   border: 7px solid #f5f5f5;
   border-bottom: 50px solid #f5f5f5;
   -webkit-box-shadow: 0 0 6px -1px #000;
-          box-shadow: 0 0 6px -1px #000;
+  box-shadow: 0 0 6px -1px #000;
   overflow: hidden;
   left: 0;
   right: 0;
   margin: auto;
   -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+  transform: rotate(-5deg);
   clear: both;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
 .polaroid img,
 .polaroid .img {
   width: 100%;
   height: 224%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   background-position: center;
   background-size: cover;
   -webkit-animation: fade-in 20s ease-in;
-          animation: fade-in 20s ease-in;
+  animation: fade-in 20s ease-in;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
-.wishesFont{
+.wishesFont {
   position: relative;
   font-family: 'Indie Flower', cursive;
   font-weight: 800;
@@ -424,6 +441,7 @@ font-family: 'Lobster', cursive;
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -433,11 +451,13 @@ font-family: 'Lobster', cursive;
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
-#popup{
+
+#popup {
   opacity: 0;
   /* display: none; */
   top: 33.2rem;
@@ -447,28 +467,104 @@ font-family: 'Lobster', cursive;
   width: 45px;
   /* box-shadow: 3px 3px 0px 0px rgb(51 23 23); */
 }
-#pFour{
+
+#pFour {
   opacity: 0;
 }
 
-.fa-question{
+.fa-question {
   color: #ffff00;
-    text-align: center;
-    font-size: 13px;
-}
-#hoverBtn{
-  background-color: #5f1da1;
-    border: none;
-    width: 19px;
-    height: 20px;
-    /* border-radius: 14px; */
-    border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
 }
 
-#popup img{
+#hoverBtn {
+  background-color: #5f1da1;
+  border: none;
+  width: 19px;
+  height: 20px;
+  /* border-radius: 14px; */
+  border-radius: 50%;
+}
+
+#popup img {
   border-radius: 50%;
   width: 72%;
 }
+
 .popup-transition {
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: small;
+  }
+
+  #card {
+    margin: auto;
+    width: 80%;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  #card h1 {
+    font-size: 3rem;
+  }
+
+  #cake {
+    width: 60%;
+  }
+
+  #card.open-fully #card-front {
+    height: 66%;
+    width: 61%;
+    left: 150px;
+  }
+
+  #card-inside {
+    height: 66%;
+    left: 146px;
+    /* font-size: 1.3em; */
+    line-height: 1.4;
+    width: 69%;
+  }
+
+  #card-front {
+    height: 66%;
+    left: 43%;
+    width: 75%;
+  }
+
+  .wrap {
+    padding: 1.2em 2.3em;
+  }
+
+  #popup {
+    top: 27.2rem;
+    right: 6.7rem;
+    height: 35px;
+    width: 37px;
+  }
+
+  #hoverBtn {
+    width: 14px;
+    height: 14px;
+  }
+
+  .fa-question {
+    font-size: 9px;
+  }
+
+  #myName {
+    font-size: 9px;
+  }
+
+  .polaroid img,
+  .polaroid .img {
+    width: 100%;
+    height: 120%;
+  }
 }
