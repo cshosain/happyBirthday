@@ -589,4 +589,7 @@ footer {
   [data-balloon][data-balloon-pos='left']:before {
     right: 100%;
   }
+  .polaroid {
+    height: 160px;
+  }
 }
