@@ -497,6 +497,14 @@ footer {
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
+#thanksFor{
+  opacity: 0;
+  position: absolute;
+  bottom: 12rem;
+  left: 28rem;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   * {
     font-size: small;
@@ -592,10 +600,15 @@ footer {
   .polaroid {
     height: 160px;
   }
+  .velas {
+    top: 58%;
+  }
+  /* when i replace the function task the open button click by thanks instead of open card */
   #thanksFor{
     opacity: 0;
     position: absolute;
     bottom: 13rem;
+    left: 1rem;
     color: white;
   }
 }
