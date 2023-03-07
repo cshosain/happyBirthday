@@ -1,5 +1,6 @@
 let popup = document.getElementById("popup");
 let hoverBtn = document.getElementById("hoverBtn");
+let thanksFor = document.getElementById("thanksFor");
   
   
 
@@ -46,13 +47,15 @@ function writeLine(i) {
     closeB = $('close'),
     timer = null;
   openB.addEventListener('click', function () {
-    card.setAttribute('class', 'open-half');
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(function () {
-      card.setAttribute('class', 'open-fully');
-      timer = null;
-    }, 1000);
-    represent();
+    // card.setAttribute('class', 'open-half');
+    // if (timer) clearTimeout(timer);
+    // timer = setTimeout(function () {
+    //   card.setAttribute('class', 'open-fully');
+    //   timer = null;
+    // }, 1000);
+    // represent();
+    // when i replace the function task the open button click by thanks instead of open card
+    showImage(thanksFor, true);
     
   });
 
