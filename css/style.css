@@ -503,6 +503,7 @@ footer {
   bottom: 12rem;
   left: 28rem;
   color: white;
+  background-color: #000000c8;
 }
 
 @media only screen and (max-width: 600px) {
